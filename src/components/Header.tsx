@@ -2,7 +2,7 @@ import React from "react";
 import { Menu, X, LogIn, LogOut } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "@/contexts/AuthContext";
+import { useAuth } from "@/context/AuthContext";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
