@@ -10,7 +10,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import { Bell, User, LogOut, Briefcase } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
-import { supabase } from "@/Intergrations/supabase/client";
+import { supabase } from "@/intergrations/supabase/client";
 
 interface Profile {
   id: string;
