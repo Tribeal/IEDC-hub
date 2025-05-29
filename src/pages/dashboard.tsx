@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
 import { Bell, User, LogOut, Briefcase } from "lucide-react";
-import { useAuth } from "@/contexts/AuthContext";
+import { useAuth } from "@/context/AuthContext";
 import { supabase } from "@/intergrations/supabase/client";
 
 interface Profile {
