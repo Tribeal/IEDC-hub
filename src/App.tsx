@@ -1,15 +1,14 @@
-import React from "react";
-import { Toaster } from "sonner";
-import { TooltipProvider } from "@radix-ui/react-tooltip";
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { AuthProvider } from "@/context/AuthContext";
-import ProtectedRoute from "@/components/ProtectedRoute";
+import { AuthProvider } from "@/contexts/AuthContext";
 import Index from "./pages/index";
-import Login from "./pages/login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/dashboard";
 import NotFound from "./pages/NotFound";
+import Team from "@/components/Team";
 
 const queryClient = new QueryClient();
 
@@ -18,10 +17,10 @@ const App = () => (
     <AuthProvider>
       <TooltipProvider>
         <Toaster />
+        <Sonner />
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/dashboard" element={<Dashboard />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
