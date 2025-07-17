@@ -118,10 +118,10 @@ const Team = () => {
 
          {
             id: 9,
-            name: "Abhishek Vijayan",
-            position: "Technical Lead",
+            name: "Aman Xavier",
+            position: "Finance Lead",
             image: aman,
-            bio: "Developing Innovative Technical Solution",
+            bio: "Upkeepment of finance operation",
             Linkedin: "https://www.linkedin.com/in/abhishek-vijayan-baa449243/",
             github: "https://github.com/Tribeal",
             email: "chanduvk133@gmail.com"
